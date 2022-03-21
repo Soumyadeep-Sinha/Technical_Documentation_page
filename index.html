@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="main-box">
+        <nav id="navbar">
+            <header>SQL Documentation</header>
+            <a href="#Introduction" class="nav-link">Introduction</a>
+            <a href="#SQL_Process" class="nav-link">SQL_Process</a>
+            <a href="#SQL_commands" class="nav-link">SQL_Commands</a>
+            <a href="#SQL_RDBMS" class="nav-link">SQL_RDBMS</a>
+            <a href="#mySQL" class="nav-link">MySQL</a>
+            <a href="#SQL_Syntax" class="nav-link">SQL_Syntax</a>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <p>SQL is Structured Query Language, which is a computer language for storing, manipulating and
+                    retrieving
+                    data stored in a relational database.</p>
+                <p>SQL is the standard language for Relational Database System. All the Relational Database Management
+                    Systems (RDMS) like MySQL, MS Access, Oracle, Sybase, Informix, Postgres and SQL Server use SQL as
+                    their
+                    standard database language.</p>
+                <p>SQL is widely popular because it offers the following advantages:</p>
+                <ul>
+                    <li>Allows users to access data in the relational database management systems.</li>
+                    <li>Allows users to describe the data.</li>
+                    <li>Allows users to define the data in a database and manipulate that data.</li>
+                    <li>Allows to embed within other languages using SQL modules, libraries & pre-compilers.</li>
+                    <li>Allows users to create and drop databases and tables.</li>
+                    <li>Allows users to create view, stored procedure, functions in a database.</li>
+                    <li>Allows users to set permissions on tables, procedures and views.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="SQL_Process">
+                <header>SQL_Process</header>
+                <p>When you are executing an SQL command for any RDBMS, the system determines the best way to carry out
+                    your
+                    request and SQL engine figures out how to interpret the task. There are various components included
+                    in
+                    this process.</p>
+                <p>These components are </p>
+                <ul>
+                    <li>Query Dispatcher</li>
+                    <li>Optimization Engines</li>
+                    <li>Classic Query Engine</li>
+                    <li>SQL Query Engine, etc.</li>
+                </ul>
+                <p>A classic query engine handles all the non-SQL queries, but a SQL query engine won't handle logical
+                    files.</p>
+            </section>
+            <section class="main-section" id="SQL_commands">
+                <header>SQL_Commands</header>
+                <p>The standard SQL commands to interact with relational databases are CREATE, SELECT,
+                    INSERT, UPDATE, DELETE and DROP. These commands can be classified into the following
+                    groups based on their nature:</p>
+                <p> <strong>Definition Language</strong></p>
+
+                <p>CREATE => Creates a new table, a view of a table, or other object in the database.</p>
+                <p>ALTER => Modifies an existing database object, such as a table.database</p>
+                    <p>DROP => Deletes an entire table, a view of a table or other objects in the database.</p>
+                    <p><strong>Data Manipulation Language</strong></p>
+
+                    <p>SELECT => Retrieves certain records from one or more tables.</p>
+                    <p>INSERT => Creates a record.</p>
+                    <p>UPDATE => Modifies records.</p>
+                    <p>DELETE => Deletes records.</p>
+                    <p><strong>Data Control Language</strong></p>
+
+                    <p>GRANT => Gives a privilege to user.</p>
+                    <p>REVOKE => Takes back privileges granted from user.</p>
+
+            </section>
+            <section class="main-section" id="SQL_RDBMS">
+                <header>SQL_RDBMS</header>
+                <p>RDBMS stands for Relational Database Management System. RDBMS is the basis for SQL, and for all
+                    modern
+                    database systems like MS SQL Server, IBM DB2, Oracle, MySQL, and Microsoft Access.</p>
+                <p>A Relational database management system (RDBMS) is a database management system (DBMS) that is based
+                    on
+                    the relational model as introduced by E. F. Codd.</p>
+            </section>
+            <section class="main-section" id="mySQL">
+                <header>MySQL</header>
+                <p>MySQL is an open source SQL database, which is developed by a Swedish company MySQL AB. MySQL is
+                    pronounced as "my ess-que-ell," in contrast with SQL, pronounced "sequel."</p>
+                <p>MySQL is supporting many different platforms including Microsoft Windows, the major Linux
+                    distributions,
+                    UNIX, and Mac OS X.</p>
+                <P>MySQL has free and paid versions, depending on its usage (non-commercial/commercial) and features.
+                    MySQL
+                    comes with a very fast, multi-threaded, multi-user and robust SQL database server.</P>
+            </section>
+            <section class="main-section" id="SQL_Syntax">
+                <header>SQL_Syntax</header>
+                <p>SQL is followed by a unique set of rules and guidelines called Syntax.</p>
+                <p>All the SQL statements start with any of the keywords like SELECT, INSERT, UPDATE, DELETE, ALTER,
+                    DROP,
+                    CREATE, USE, SHOW and all the statements end with a semicolon (;).</p>
+                <p>The most important point to be noted here is that SQL is case insensitive, which means SELECT and
+                    select
+                    have same meaning in SQL statements. Whereas, MySQL makes difference in table names. So, if you are
+                    working with MySQL, then you need to give table names as they exist in the database.</p>
+                <div>
+                    <code>
+                        SELECT column1, column2....columnN
+                        FROM table_name;
+                     </code>
+                </div>
+                <div>
+                    <code>
+                        SELECT DISTINCT column1, column2....columnN
+                        FROM table_name;
+                     </code>
+                </div>
+                <div>
+                    <code>
+                        SELECT column1, column2....columnN
+                        FROM table_name
+                        WHERE CONDITION;
+                     </code>
+                </div>
+                <div>
+                    <code>
+                        SELECT column1, column2....columnN
+                        FROM table_name
+                        WHERE CONDITION-1 {AND|OR} CONDITION-2;
+                     </code>
+                </div>
+                <div>
+                    <code>
+                        CREATE TABLE table_name(
+                            column1 datatype,
+                            column2 datatype,
+                            column3 datatype,
+                            .....
+                            columnN datatype,
+                            PRIMARY KEY( one or more columns )
+                            );
+                     </code>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
